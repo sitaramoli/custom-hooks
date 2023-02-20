@@ -1,6 +1,6 @@
 
 import './App.scss'
-import Box from './assets/Components/Box'
+import Box from './assets/components/Box'
 
 function App() {
 
