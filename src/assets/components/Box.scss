@@ -1,0 +1,54 @@
+.box {
+    background-color: red;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    &__circle {
+        position: absolute;
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: white;
+    }
+    &__triangle {
+        position: absolute;
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid white;
+    }
+    &__square {
+        position: absolute;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+    }
+    &__star {
+        position: absolute;
+        display: block;
+        margin: 5px auto;
+        width: 5px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            background: white;
+            width: 10px;
+            height: 10px;
+            transform: rotate(-45deg) skewX(22.5deg) skewY(22.5deg);
+        }
+
+        &:after {
+            content: "";
+            position: absolute;
+            background: white;
+            width: 10px;
+            height: 10px;
+            transform: rotate(45deg) skewX(22.5deg) skewY(22.5deg);
+        }
+    }
+}
